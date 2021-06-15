@@ -6,6 +6,10 @@
   "scripts": {
     "test": "cypress run"
   },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/integration/"
+  },
   "keywords": [
     "cypress",
     "test",
@@ -14,7 +18,9 @@
   ],
   "author": "Ted Medeiros",
   "license": "ISC",
-  "dependencies": {
-    "cypress": "^6.8.0"
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^6.9.1",
+    "cypress-cucumber-preprocessor": "^4.1.2"
   }
 }
